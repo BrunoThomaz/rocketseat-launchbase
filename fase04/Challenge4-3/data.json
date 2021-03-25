@@ -1,0 +1,34 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Bruno Thomaz",
+      "nascimento": 1557273600000,
+      "escolaridade": "superior",
+      "aula": "presencial",
+      "atuacao": "Matemática, física",
+      "createdAt": 1593471522330,
+      "id": 1
+    },
+    {
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Bruno Thomaz",
+      "nascimento": 1588896000000,
+      "escolaridade": "superior",
+      "aula": "presencial",
+      "atuacao": "Matemática, física",
+      "createdAt": 1593471547118,
+      "id": 2
+    },
+    {
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Bruno Thomaz",
+      "nascimento": 1573171200000,
+      "escolaridade": "superior",
+      "aula": "presencial",
+      "atuacao": "Matemática, física",
+      "createdAt": 1593471566697,
+      "id": 3
+    }
+  ]
+}

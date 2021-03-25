@@ -1,0 +1,19 @@
+{
+  "name": "fase02-foodfy-refactoring",
+  "version": "1.0.0",
+  "description": "Module 05 17668 of LaunchBase of RocketSeat",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Bruno Thomaz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

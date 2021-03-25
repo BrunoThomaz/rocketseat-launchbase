@@ -1,0 +1,18 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <main>
+        <form class="card" method="post" action="/teachers">
+            <div class="image">
+            </div>
+            <div class="details">
+                <h2>Cadastro</h2>
+                {% include 'teachers/form.njk'%}
+                <div class="item">
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+{% endblock content %}

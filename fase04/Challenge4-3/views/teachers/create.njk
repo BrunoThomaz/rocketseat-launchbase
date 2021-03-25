@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <main>
+        <form class="card" method="post" action="/teachers">
+            <div class="image">
+            </div>
+            <div class="details">
+                <h2>Cadastro</h2>
+                <div class="item">
+                    <div>Foto de Perfil</div>
+                    <input type="url" name="avatar_url">
+                </div>
+                <div class="item">
+                    <div>Nome Completo</div>
+                    <input type="text" name="name">
+                </div>
+                <div class="item">
+                    <div>Data de Nascimento</div>
+                    <input type="date" name="nascimento">
+                </div>
+                <div class="item">
+                    <div>Grau de Escolaridade</div>
+                    <select name="escolaridade">
+                        <option value="medio">Ensino Médio Completo</option>
+                        <option value="superior">Ensino Superior Completo</option>
+                        <option value="mestrado">Mestrado</option>
+                        <option value="doutorado">Doutorado</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <div>Tipo de Aula</div>
+                    <input type="radio" name="aula" value="presencial" id="presencial" checked>
+                    <label for="presencial">Presencial</label>
+                    <input type="radio" name="aula" value="distância" id="distancia">
+                    <label for="distancia">À distância</label>
+                </div>
+                <div class="item">
+                    <div>Acompanhamento</div>
+                    <input type="text" name="atuacao">
+                </div>
+                <div class="item">
+                    <button type="submit">Cadastrar</button>
+                </div>
+                
+            </div>
+        </form>
+    </main>
+
+{% endblock content %}

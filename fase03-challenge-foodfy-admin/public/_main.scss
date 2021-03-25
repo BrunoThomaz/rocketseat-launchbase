@@ -1,0 +1,67 @@
+
+section#banner {
+    background-color: #FBDFDB;
+    border-radius: 30px;
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+    min-width: 500px;
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 10vw;
+        width: 20vw;
+        max-width: 215px;
+    }
+    h2 {
+        padding: 5rem .5rem .5rem 2.5rem;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    p {
+        width: 45%;
+        padding-left: 2.5rem;
+        font-size: 18px;
+    }
+}
+
+
+section#receitas {
+    padding-top: 2rem;
+    width: 80vw;
+    margin: auto;
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        padding-top: 1rem;
+        h4 {
+            color: #111111;
+            font-size: 18px;
+            font-weight: 400;
+            pointer-events: none;
+            padding-top: 1rem;
+        }
+        h5 {
+            color: #777777;
+            font-size: 14px;
+            font-weight: 400;
+            pointer-events: none;
+            padding-bottom: 1rem;
+        }
+
+        img {
+            width: 100%;
+            pointer-events: none;
+            border-radius: 15px;
+        }
+    }
+}
+
+.card {
+    cursor: pointer;
+    *{
+        pointer-events: none;
+    }
+}

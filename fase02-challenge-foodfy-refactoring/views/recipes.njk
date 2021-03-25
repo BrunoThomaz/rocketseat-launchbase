@@ -1,0 +1,21 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+<section id="receitas">
+    <div class="cards">
+        {% for item in data %}
+            <div class="card">
+                <img src="{{item.image}}" alt="">
+                <h4>{{item.title}}</h4>
+                <h5>por {{item.author}}</h5>
+            </div>
+        {% endfor %}
+        
+    </div>
+</section>
+{% endblock content %}
+
+{% block footer %}
+<script src="/recipes.js"></script>
+{% endblock footer %}
+

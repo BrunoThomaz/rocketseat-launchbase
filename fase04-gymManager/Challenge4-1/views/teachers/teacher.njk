@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+
+
+{% block content %}
+    <main>
+        <div class="card">
+            <div class="image" style="background: url(https://source.unsplash.com/collection/3465564/500x500) no-repeat center center / cover">
+            </div>
+            <div class="details">
+                <h2>Detalhes</h2>
+                <div class="item">
+                    <div>Nome Completo</div>
+                    <div>{{teacher.name}}</div>
+                </div>
+                <div class="item">
+                    <div>Idade</div>
+                    <div>{{teacher.idade}} </div>
+                </div>
+                <div class="item">
+                    <div>Grau de Escolaridade</div>
+                    <div>{{teacher.escolaridade}}</div>
+                </div>
+                <div class="item">
+                    <div>Tipo de Aula</div>
+                        <div>{{teacher.aula}}</div>
+                </div>
+                <div class="item">
+                    <div>Acompanhamento</div>
+                    {% for area in teacher.atuacao %}
+                        <div>{{area}} </div>
+                    {% endfor %}
+                        
+                </div>
+                <div class="item">
+                    <div>Desde</div>
+                    <div>{{teacher.createdAt}}</div>
+                </div>
+                <a href="/teachers/{{teacher.id}}/edit">Editar</a>
+                <form action="/teachers?_method=DELETE" method="POST">
+                    <button type="submit" name="id" value="{{teacher.id}}">Deletar</button>
+                </form>
+                
+            </div>
+        </div>
+    </main>
+
+{% endblock content %}

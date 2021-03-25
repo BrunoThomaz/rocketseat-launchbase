@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1-2: JS firsts steps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="presentation">
+        <h1>Challenge 1-2 BootCamp LaunchBase</h1>
+        <nav>
+            <ul>
+                <li><a href="#challenge1">Challenge 01</a></li>
+                <li><a href="#challenge2">Challenge 02</a></li>
+            </ul>
+        </nav>
+        <p>To test the functions, use the console of your navigator.</p>
+        
+    </header>
+
+    <main>
+        <section id="challenge1">
+            <h2>Rocketseat Data</h2>
+            <p>The button below calls rocketData () toget the data from Rocketseat and print on console
+                a message.
+            </p>
+            <fieldset>
+                <label for="company">Company</label>
+                <input type="text" name="company" id="company">
+                
+                <label for="color">Color</label>
+                <input type="text" name="color" id="color">
+
+                <label for="focus">Focus</label>
+                <input type="text" name="focus" id="focus">
+
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address">
+
+                <label for="number">Number</label>
+                <input type="text" name="number" id="number">
+            </fieldset>
+            <button id="rocketData">Give me the message!</button>
+            <p>Example 1-2: <code>rocketData();</code></p>
+            <div class= "output" id="outputRocket"></div>
+        </section>
+
+        <section id="challenge2">
+            <h2>Developer Data</h2>
+            <p>The button below call the function devData() that return
+                a message.
+            </p>
+            <fieldset>
+                <label for="developer">Name</label>
+                <input type="text" name="developer" id="developer">
+
+                <label for="age">Age</label>
+                <input type="text" name="age" id="age">
+                <label for="Knowledge">Knowledge</label>
+                <input type="text" name="name" class="knowledge" placeholder="Name">
+                <input type="text" name="specialty" class="specialty" placeholder="Specialty">
+                <button id="newField">+</button>
+            </fieldset>
+            <button id="devData">Give me the hint!</button>
+            <p>Example 2-2: <code>devData();</code></p>
+            <div class= "output" id="outputDev"></div>
+        </section>
+    </main>
+    
+
+    <a href="#"><div id="top"></div></a>
+    <script src="./main.js"></script>    
+    <script src="./app.js"></script>
+</body>
+</html>

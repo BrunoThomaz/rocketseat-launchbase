@@ -1,0 +1,34 @@
+{
+  "teachers": [
+    {
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Professor 1",
+      "nascimento": 1580428800000,
+      "escolaridade": "medio",
+      "aula": "presencial",
+      "atuacao": "Matemática, física",
+      "createdAt": 1593543548114,
+      "id": 1
+    },
+    {
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Professor 2",
+      "nascimento": 1580515200000,
+      "escolaridade": "medio",
+      "aula": "presencial",
+      "atuacao": "Matemática, física",
+      "createdAt": 1593543558919,
+      "id": 2
+    },
+    {
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "name": "Professor 3",
+      "nascimento": 1582934400000,
+      "escolaridade": "medio",
+      "aula": "presencial",
+      "atuacao": "Matemática, física",
+      "createdAt": 1593543572571,
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+section#banner {
+  background-color: #FBDFDB;
+  border-radius: 30px;
+  width: 80vw;
+  height: 50vh;
+  margin: auto;
+  position: relative;
+  min-width: 500px;
+}
+
+section#banner img {
+  position: absolute;
+  bottom: 0;
+  right: 10vw;
+  width: 20vw;
+  max-width: 215px;
+}
+
+section#banner h2 {
+  padding: 5rem .5rem .5rem 2.5rem;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+section#banner p {
+  width: 45%;
+  padding-left: 2.5rem;
+  font-size: 18px;
+}
+
+section#receitas {
+  padding-top: 2rem;
+  width: 80vw;
+  margin: auto;
+}
+
+section#receitas .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding-top: 1rem;
+}
+
+section#receitas .cards h4 {
+  color: #111111;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+
+section#receitas .cards h5 {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+section#receitas .cards img {
+  width: 100%;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=main.css.map */

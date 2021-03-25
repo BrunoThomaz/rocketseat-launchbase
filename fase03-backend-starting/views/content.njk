@@ -1,0 +1,39 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Main - Challenge 3-1</title>
+{% endblock head %}
+
+{% block content %}
+
+<main>
+    <div class="courses">
+    {% for item in data %}
+
+    <div class="course">
+        <img src="{{ item.imgSrc }}" alt="{{ item.altImg }}">
+        <p>{{ item.description }}</p>
+    </div>
+
+    {% endfor %}
+        {# <div class="course">
+            <img src="https://skylab.rocketseat.com.br/static/media/Starter.64c237cc.svg?" alt="">
+            <p>Torne-se um programador desejado no mercado com esses cursos gratuitos</p>
+        </div>
+
+
+        <div class="course launchbase">
+            <img src="https://skylab.rocketseat.com.br/static/media/LaunchBase.08285320.svg" alt="">
+            <p>Domine programação do zero e tenha acesso às melhores oportunidades do mercado</p>
+
+        </div>
+        <div class="course">
+            <img src="https://skylab.rocketseat.com.br/static/media/GoStack.83a178a0.svg" alt="">
+            <p>Treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile</p>
+        </div> #}
+    </div>
+</main>
+
+{% endblock content %}
+
+    

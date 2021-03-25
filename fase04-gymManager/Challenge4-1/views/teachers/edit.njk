@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <main>
+        <form class="card" method="post" action="/teachers?_method=PUT">
+            <div class="image">
+            </div>
+            <div class="details">
+                <h2>Editar</h2>
+                {% include 'teachers/form.njk'%}
+                <input type="hidden" name="id" value="{{teacher.id}}">
+                <div class="item">
+                    <button type="submit">Salvar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+{% endblock content %}

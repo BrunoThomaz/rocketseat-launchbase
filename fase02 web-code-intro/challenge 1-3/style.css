@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 3em;
+    text-align: justify;
+    color: #f0f0f0;
+    font-size: .1.25em;
+    font-family: ubuntu, sans-serif;
+    scroll-behavior: smooth;
+}
+
+section, header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+
+section p {
+    width: 70%;
+    margin: auto;
+    text-align: justify; 
+}
+
+header p {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    display: block;
+    width: 100%;
+    margin: 0 auto 1em auto;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 2.25em 0 2em 0;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: .5em;
+    border-radius: 5px;
+    border:#aaaaaa solid 1px;
+    cursor: text;
+    margin: 2em;
+    color: #0c0c0c;
+}
+nav {
+    display: block;
+    width: 100%;
+}
+
+nav ul li {
+    list-style: none;
+    cursor: pointer;
+    background: #FFFFFF;
+    padding: .2em 1em;
+    border-radius: 5px;
+    border: #000000 solid 2px;
+    box-shadow: 0px 3px 10px #0000006e;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #0c0c0c;
+}
+
+@media (max-width: 739px){
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    nav ul li {
+        margin: .3em auto;
+        padding: .1em .2em;
+    }
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto 2em;
+}
+
+nav ul li {
+    text-align: center;
+    width: 30%;
+    margin: .3em auto;
+    padding: .1em .2em;
+}
+
+
+#top {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url('./img/up.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+#presentation{
+
+    background: linear-gradient(to right top, #247464, #418C7D);
+
+}
+
+#challenge1{
+    background: linear-gradient(to right top, #0D3800, #175B02);
+}
+
+button {
+    width: 30%;
+    margin: auto;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;   
+}
+
+div.randomColor {
+    display: inline-flex;
+}
+
+#challenge2{
+    background: linear-gradient(to right top, #014437, #014437);
+}
+fieldset {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+fieldset label{
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"], select {
+    width: 50%;
+    margin:auto;
+    border: none;
+    border-bottom: solid 2px #499A2f;
+    color: #000000;
+    padding-left: .5em;
+    border-radius: 8px;
+}
+
+select {
+    padding: .5em;
+}
+
+input[type="text"]:focus, select:focus {
+    border-bottom: solid 3px #3587f1;
+}
+
+.output {
+    min-height: 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+}

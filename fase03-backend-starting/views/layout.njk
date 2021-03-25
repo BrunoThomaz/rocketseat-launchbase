@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block head %}
+    <title>Challenge 2-1</title>
+    {% endblock %}
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./">Main</a></li>
+                <li><a href="https://discordapp.com/invite/gCRAFhc">Community</a></li>
+                <li><a href="mailto:oi@rocketseat.com.br">Email</a></li>
+                <li><a href="tel:+5547992078767">Phone</a></li>
+                <li><a href="./about">About</a></li>
+                <li><a href="./content">Contents</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/Rocketseat">GitHub</a></li>
+                <li><a href="https://fb.com/rocketseat">Facebook</a></li>
+                <li><a href="https://instagram.com/rocketseat_oficial">Instagram</a></li>
+
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

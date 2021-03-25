@@ -1,0 +1,48 @@
+{% extends "layout.njk" %}
+
+
+{% block content %}
+<div class="recipe">
+    <div class="banner">
+        <img src="{{ data[index].image }}" alt="">
+        <h2>{{data[index].title}}</h2>
+        <h4>por {{data[index].author}}</h4>
+    </div>
+    
+    <div class="flex">
+        <h3>Ingredientes</h3>
+        <a href="#" id="ingredients">ESCONDER</a>
+    </div>
+    <ul class="ingredients active">
+        {% for ingredient in data[index].ingredients %}
+            <li> {{ingredient}} </li>
+
+        {% endfor %}
+    </ul>
+    
+    <div class="flex">
+        <h3>Modo de preparo</h3>
+        <a href="#" id="preparation">ESCONDER</a>
+    </div>
+    <ul class="preparation active">
+    {% for preparation in data[index].preparation %}
+        <li> {{preparation}} </li>
+
+    {% endfor %}
+    </ul>
+    {% if data[index].information != '' %}
+    <div class="flex">
+    
+        <h3>Informações adicionais</h3>
+        <a href="#" id="additionals">ESCONDER</a>
+    </div>
+    <p class="additionals active"> {{ data[index].information }} </p>
+    {% endif %}
+</div>
+    
+{% endblock content %}
+
+{% block footer %}
+    <script src="/app.js"></script>
+
+{% endblock footer %}

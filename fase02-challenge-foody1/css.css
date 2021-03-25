@@ -1,0 +1,209 @@
+div.about {
+  width: 80vw;
+  margin: auto;
+}
+
+div.about h2 {
+  padding-top: 1rem;
+}
+
+div.about p {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  padding-bottom: 1rem;
+  padding-top: .5rem;
+}
+
+section#banner {
+  background-color: #FBDFDB;
+  border-radius: 30px;
+  width: 80vw;
+  height: 50vh;
+  margin: auto;
+  position: relative;
+  min-width: 500px;
+}
+
+section#banner img {
+  position: absolute;
+  bottom: 0;
+  right: 10vw;
+  width: 20vw;
+  max-width: 215px;
+}
+
+section#banner h2 {
+  padding: 5rem .5rem .5rem 2.5rem;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+section#banner p {
+  width: 45%;
+  padding-left: 2.5rem;
+  font-size: 18px;
+}
+
+section#receitas {
+  padding-top: 2rem;
+  width: 80vw;
+  margin: auto;
+}
+
+section#receitas .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding-top: 1rem;
+}
+
+section#receitas .cards h4 {
+  color: #111111;
+  font-size: 18px;
+  font-weight: 400;
+  pointer-events: none;
+  padding-top: 1rem;
+}
+
+section#receitas .cards h5 {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  pointer-events: none;
+  padding-bottom: 1rem;
+}
+
+section#receitas .cards img {
+  width: 100%;
+  pointer-events: none;
+  border-radius: 15px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  margin: auto;
+  padding: 2rem;
+}
+
+header img {
+  padding-right: 5rem;
+  cursor: pointer;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li {
+  padding: 0 3rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+footer {
+  height: 10vh;
+  background-color: #EEEEEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  color: #999999;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modalContent {
+  background-color: #EEEEEE;
+  width: 50vw;
+  border-radius: 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modalContent h4 {
+  color: #111111;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 1rem;
+  pointer-events: none;
+}
+
+.modal .modalContent h5 {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  pointer-events: none;
+}
+
+.modal .modalContent a {
+  color: #999999;
+  cursor: pointer;
+}
+
+.modal .modalContent img {
+  width: 100%;
+  border-radius: 15px;
+  pointer-events: none;
+}
+/*# sourceMappingURL=css.css.map */
